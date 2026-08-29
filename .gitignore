@@ -9,3 +9,17 @@ dist
 .next/
 .env*.local
 .DS_Store
+
+# Environment secrets — never commit the real .env
+# .env.example IS committed on purpose (it's just a template)
+.env
+backend/.env
+
+# Python bytecode — never commit compiled files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Runtime JSONL log data — generated at runtime, not source
+# The logs/ directory itself is kept via .gitkeep
+backend/logs/*.jsonl
