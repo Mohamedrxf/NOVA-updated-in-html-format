@@ -9,6 +9,7 @@
       content="NetSage AI — Evidence-constrained AI assistance for Cisco-style network troubleshooting. Deterministic rules + AI assessment + human review."
     />
     <title>NetSage AI — Evidence-Constrained Network Troubleshooting</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -20,6 +21,18 @@
 
     <!-- Tailwind (Play CDN for a static demo) -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Import Map for bare ES module specifiers in browser environments (e.g. Live Server) -->
+    <script type="importmap">
+      {
+        "imports": {
+          "chart.js/auto": "https://cdn.jsdelivr.net/npm/chart.js@4.4.1/auto/auto.js",
+          "@kurkle/color": "https://cdn.jsdelivr.net/npm/@kurkle/color@0.3.2/+esm",
+          "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+        }
+      }
+    </script>
     <script>
       tailwind.config = {
         theme: {
